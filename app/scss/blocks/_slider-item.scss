@@ -1,0 +1,28 @@
+.slider-item {
+    &__info {
+        position: absolute;
+        right: 80px;
+        bottom: 116px;
+        text-align: right;
+        color: #fff;
+        text-transform: uppercase;
+        &-title {
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 86px;
+            margin-bottom: 48px;
+        }
+        &-subtitle {
+            margin-bottom: 5px;
+        }
+        &-subtext {
+            margin-bottom: 8px;
+        }
+        &-text {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 46px;
+            margin-bottom: 20px;
+        }
+    }
+}
