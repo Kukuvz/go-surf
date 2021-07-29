@@ -1,14 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
 }
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
 ul, li {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.btn {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    span {
+        padding: 17px 57px 15px 17px;
+        background-color: $green;
+        display: inline-block;
+        margin-left: 19px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 21px;
+            background-image: url('/img/arrows-right.svg');
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+        }
+    }
 }

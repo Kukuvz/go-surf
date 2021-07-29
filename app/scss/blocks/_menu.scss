@@ -1,7 +1,6 @@
 .menu {
     padding-top: 40px;
     a {
-        color: #fff;
         span {
             display: block;
             font-weight: 500;
@@ -10,6 +9,7 @@
             letter-spacing: 3px;
             padding-top: 6px;
             margin-bottom: 20px;
+            text-transform: capitalize;
         }
     }
 }
