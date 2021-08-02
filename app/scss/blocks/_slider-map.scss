@@ -1,0 +1,74 @@
+.slider-map {
+    max-width: 1200px;
+    min-height: 635px;
+    background-image: url('../img/world-map-dots.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+    .slick-list {
+        min-height: 635px;
+    }
+    .slick-current {
+        .slider-dots__content {
+            display: block;
+        }
+    }
+}
+.slider-dots__circle {
+    width: 24px;
+    height: 24px;
+    background-color: $green;
+    border-radius: 50%;
+}
+.slider-dots__content {
+    display: none;
+}
+.slider-dots {
+    position: relative;
+}
+.slider-dots--1{
+    top: 335px;
+    left: 0;
+}
+.slider-dots--2{
+    top: 270px;
+    left: 0px;
+    .slider-dots__circle{
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('/img/mini-marker.png');
+            width: 14px;
+            height: 17px;
+            background-size: cover;
+            right: -15px;
+            top: -25px;
+        }
+    }
+}
+.slider-dots--3{
+    top: 330px;
+    left: 25px;
+}
+.slider-dots--4{
+    top: 470px;
+    left: -25px;
+}
+.slider-dots--5{
+    top: 230px;
+    left: -65px;
+}
+.slider-dots--6{
+    top: 550px;
+    left: -120px;
+}
+.slider-dots--7{
+    top: 375px;
+    left: -95px;
+}
+.slider-dots--8{
+    top: 470px;
+    left: 35px;
+}
