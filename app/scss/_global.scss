@@ -125,3 +125,12 @@ ul, li {
     position: absolute;
     right: 25px;
   }
+
+.star-list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: -25px;
+    }
+  }
+}
