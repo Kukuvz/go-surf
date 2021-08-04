@@ -63,6 +63,10 @@
     .slider-item__info-title {
         font-size: 65px;
     }
+    .header__arrows {
+        left: 20px;
+        bottom: 20px;
+    }
 }
 
 @media (max-width: 1340px) {
@@ -81,6 +85,105 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
+    .header__arrows {
+        display: none;
+    }
+    .menu {
+        background-color: #000;
+        z-index: 22;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+        transition: all .5s;
+        &.active {
+            transform: translateX(0);
+        }
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .header__search {
+        padding: 40px 15px 15px;
+    }
+    .slider-item__info {
+        right: 20px;
+        bottom: 17px;
+    }
+    .slider-item__info-text {
+        font-size: 30px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .headline-left {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 65px;
+    }
+    .slider-item__info-subtext {
+        margin-bottom: 5px;
+    }
+    .headline-left::before {
+        width: 50px;
+    }
+    .slider-item__info-title {
+        font-size: 55px;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+    .slider-dotshead {
+        right: 0;
+        left: 10px;
+        margin: 0 auto;
+        bottom: 5px;
+    }
+    .dots-box {
+        width: 125px;
+    }
+    .dots-box__number {
+        font-size: 18px;
+    }
+    .dots-box__name {
+        line-height: 18px;
+    }
+}
+@media (max-width: 960px) {
+    .slider-dotshead {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
 
+}
+@media (max-width: 460px) {
+    .header__aside {
+        display: block;
+        text-align: center;
+        padding-right: 0;
+        height: 100vh;
+    }
+    .header__search {
+        padding: 15px 0 5px;
+    }
+    .header__date {
+        padding: 0;
+        font-size: 50px;
+        line-height: 45px;
+        span {
+            font-size: 12px;
+        }
+    }
+    .header__location {
+        margin-top: 0;
+    }
+    .header__title {
+        display: none;
+    }
 }

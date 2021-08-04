@@ -12,6 +12,7 @@ $(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         asNavFor: '.header__slider',
+        
     });
 
     $('.surf-slider').slick({
@@ -82,6 +83,8 @@ $(function(){
       $(this).toggleClass('active');
     });
 
-
+    $('.menu-btn').on('click', function() {
+        $('.menu').toggleClass('active');
+    });
   
 });
