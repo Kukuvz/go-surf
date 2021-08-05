@@ -1,4 +1,4 @@
-.sufboard {
+.surfboard {
     position: relative;
     &-box {
         position: absolute;
@@ -10,7 +10,7 @@
             position: relative;
             cursor: pointer;
             &.active {
-                & + .sufboard-box__content {
+                & + .surfboard-box__content {
                     display: block;
                 }
                 .circle-row {
@@ -41,18 +41,18 @@
     }
 }
 
-.sufboard__position--1{
+.surfboard__position--1{
     right: 40px;
     top: 215px;
 }
-.sufboard__position--2{
+.surfboard__position--2{
     left: -6px;
     top: 313px;
 }
-.sufboard__position--3{
+.surfboard__position--3{
     left: 52px;
     bottom: 70px;
-    .sufboard-box__content {
+    .surfboard-box__content {
         padding-left: 0;
         padding-right: 104px;
         top: -15px;
