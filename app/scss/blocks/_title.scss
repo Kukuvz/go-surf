@@ -1,11 +1,14 @@
 .title {
-    span {
+    div {
         display: inline-block;
         font-weight: 800;
         font-size: 200px;
         color: rgba(#fff, .02);
         position: relative;
         transform: translateX(-50px);
+    }
+    span {
+        display: inline-block;
     }
     h3 {
         position: absolute;
