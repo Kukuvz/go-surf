@@ -11,6 +11,12 @@
             margin-bottom: 20px;
             text-transform: capitalize;
         }
+        &:hover {
+            img {
+            transition: 0.3s all;
+            transform: scale(1.5);
+            }
+        }
     }
 }
 .menu-btn {

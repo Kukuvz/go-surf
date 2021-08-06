@@ -12,7 +12,7 @@
 </head>
 <body>
   
-  <header class="header">
+  <header id="up" class="header">
     <div class="header__title">
       go surf
     </div>
@@ -52,22 +52,22 @@
       <nav class="menu">
         <ul class="menu__list">
           <li>
-            <a href="#">
+            <a href="#surf">
               <img src="img/nav-ico-1.svg" alt="nav-ico-1"><span>Surf</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#holder">
               <img src="img/nav-ico-2.svg" alt="nav-ico-2"><span>holder</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#sleep">
               <img src="img/nav-ico-3.svg" alt="nav-ico-3"><span>Sleep</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#shop">
               <img src="img/nav-ico-4.svg" alt="nav-ico-4"><span>Shop</span>
             </a>
           </li>
@@ -77,8 +77,10 @@
         <img src="img/search.svg" alt="search">
       </div>
       <div class="header__date">
-        20
-        <span>06 | 2018</span>
+        <div class="header__date-day">
+          20
+        </div>
+        <span class="header__month-year">06 | 2020</span>
       </div>
       <div class="header__location">
         California
@@ -159,7 +161,7 @@
   </header>
 
  <div class="container">
-    <section class="surf">
+    <section id="surf" class="surf">
       <div class="title">
         <div>
           <span class="wow animate__animated animate__fadeInLeft" data-wow-offset="400">surf</span>
@@ -530,7 +532,7 @@
       </div>
     </section>
 
-    <section class="holder">
+    <section id="holder" class="holder">
       <div class="container">
         <div class="title">
           <div>
@@ -871,7 +873,7 @@
       </div>
     </section>
 
-    <section class="holder sleep">
+    <section id="sleep" class="holder sleep">
       <div class="container">
         <div class="title">
           <div>
@@ -1380,7 +1382,7 @@
       </div>
     </section>
 
-    <section class="shop">
+    <section id="shop" class="shop">
       <div class="title">
         <div>
           <span class="wow animate__animated animate__fadeInLeft" data-wow-offset="300">shop</span>
@@ -1568,12 +1570,15 @@
         Go <span>surf</span>
       </a>
       <div class="footer__copy">
-        © Go-Surf 2018. All Rights Reserved.
+        © Go-Surf 2021. All Rights Reserved.
       </div>
     </footer>
 
   </div>
 
+  <a class="pageup"  href="#up">
+    <img src="/img/arrow-circle-up.svg" alt="arrow-circle-up">
+  </a>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
